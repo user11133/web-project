@@ -1,9 +1,0 @@
-<p>hello</p>
-@if(products==undefined){
-    <h2>Pas de Produits</h2>
-}
-@else {
-    @for (product of products; track $index) {
-        <app-product [title]= "product.title" [price]="product.price" [image]="product.image"/>
-    }
-}
